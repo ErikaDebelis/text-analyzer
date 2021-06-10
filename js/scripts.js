@@ -6,6 +6,42 @@ function noInputtedWord(word, text) {
 
 // Business Logic
 
+//-----Practice- WIP---------//
+//=====================================================================//
+function mostUsedWords(word, text) {
+  if (noInputtedWord(word, text)) {
+    return 0;
+  }
+  let sameWordCount = 0;
+  const wordArray = text.split(" ");
+  wordArray.forEach(function(element) {
+    if (element === word) {
+      sameWordCount ++;
+    }
+  });
+  return 
+}
+
+function topTalliedWords(text) {
+  let sentence = text.split(" ");
+  let sortedSentence = sentence.sort();
+  let sameWordCount = 0;
+  word = sentence[0]
+  output = []
+}
+
+sortedSentence.forEach(function(element) {
+  if (element === word) {
+    sameWordCount ++;
+  } else {
+    output.push(word + ": " + sameWordCount)
+    word = element
+    sameWordCount = 1
+  }
+}
+
+//============================================================================//
+
 function wordCounter(text) {
   if (text.trim().length === 0) {
     return 0;
